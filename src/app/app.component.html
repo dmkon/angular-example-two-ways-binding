@@ -1,0 +1,19 @@
+<div class="container">
+  <h3>Example with ngModel</h3>
+  <input [(ngModel)]='name' />
+  <br/>
+  <h1>Hello {{name}}</h1>
+  <hr/>
+  <h3>Example with property and event binding</h3>
+  <input [value]="name2" (input)="name2=$event.target.value" />
+  <br/>
+  <h1>Hello {{name2}}</h1>
+  <hr/>
+  <h3>Custom binding</h3>
+  <div class="container">
+    <br/>
+    <app-child [(counter)]="ctr"></app-child>
+    <br/>
+    <h2>count = {{ctr}}</h2>
+  </div>-
+</div>
